@@ -62,6 +62,11 @@ convention = "google"
     "S110",    # try-except-pass fine in tests
     "FBT003",  # boolean positional args fine in tests
 ]
+"examples/**/*.py" = [
+    "T201",    # print is fine in examples
+    "D102",    # run() docstrings covered by class docstring
+    "INP001",  # examples/ is not a package
+]
 
 # ── mypy ──────────────────────────────────────────────────────────────
 [tool.mypy]
